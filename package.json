@@ -1,0 +1,20 @@
+{
+  "name": "DYPlayer",
+  "version": "1.0.0",
+  "description": "“抖音”移动端全屏HTML5播放器，预加载视频，可滑动切换视频，可定制弹幕，拥有良好的交互和优秀的动画",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huruji/DYPlayer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huruji/DYPlayer/issues"
+  },
+  "homepage": "https://github.com/huruji/DYPlayer#readme"
+}
