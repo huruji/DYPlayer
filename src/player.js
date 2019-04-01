@@ -1,1 +1,3 @@
-class player {}
+class player {
+
+}

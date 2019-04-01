@@ -16,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/huruji/DYPlayer/issues"
   },
-  "homepage": "https://github.com/huruji/DYPlayer#readme"
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "microbundle": "^0.11.0",
+    "standard-version": "^5.0.2"
+  },
+  "homepage": "https://github.com/huruji/DYPlayer#readme",
+  "dependencies": {
+    "lit-html": "^1.0.0"
+  }
 }
