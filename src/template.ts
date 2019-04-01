@@ -1,12 +1,21 @@
 import {html, render} from 'lit-html'
 
+interface OptInter {
+  container: HTMLElement
+}
 export default class Template{
-  constructor(opts) {
+  opts: OptInter
+  container: HTMLElement
+  video: HTMLVideoElement
+  videoContainer: HTMLElement
+
+
+  constructor(opts:OptInter) {
     this.opts = opts;
     this.container = opts.container
   }
 
-  init() {
+  init():void {
     this.renderToContainer()
     this.video = document.querySelector('.dyplayer-video')
     this.videoContainer = document.querySelector('.dyplayer-container')
