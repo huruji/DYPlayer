@@ -116,3 +116,7 @@ typings/
 
 ##
 .vscode
+
+.rpt2*
+
+dist

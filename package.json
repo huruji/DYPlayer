@@ -4,7 +4,7 @@
   "description": "“抖音”移动端全屏HTML5播放器，预加载视频，可滑动切换视频，可定制弹幕，拥有良好的交互和优秀的动画",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "bili index.ts --format esm-min --format cjs-min"
   },
   "repository": {
     "type": "git",
@@ -17,13 +17,15 @@
     "url": "https://github.com/huruji/DYPlayer/issues"
   },
   "devDependencies": {
+    "bili": "^4.7.2",
     "eslint": "^5.15.3",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
-    "microbundle": "^0.11.0",
-    "standard-version": "^5.0.2"
+    "rollup-plugin-typescript2": "^0.20.1",
+    "standard-version": "^5.0.2",
+    "typescript": "^3.4.1"
   },
   "homepage": "https://github.com/huruji/DYPlayer#readme",
   "dependencies": {
