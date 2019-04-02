@@ -4,6 +4,7 @@
   "description": "“抖音”移动端全屏HTML5播放器，预加载视频，可滑动切换视频，可定制弹幕，拥有良好的交互和优秀的动画",
   "main": "index.js",
   "scripts": {
+    "dev": "bili index.ts --format esm-min --format cjs-min --watch",
     "build": "bili index.ts --format esm-min --format cjs-min"
   },
   "repository": {

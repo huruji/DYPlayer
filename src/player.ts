@@ -17,6 +17,7 @@ export default class Player {
     this.opts = opts
     this.container = opts.container
     this.url = opts.url
+    console.log('123123')
     this.init()
   }
 
@@ -25,6 +26,7 @@ export default class Player {
       container: this.container
     })
     this.template.init()
+    console.log(this.template)
     this.video = this.template.video
     this.videoContainer = this.template.videoContainer
     this.video.src = this.url
