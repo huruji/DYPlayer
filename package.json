@@ -18,14 +18,18 @@
     "url": "https://github.com/huruji/DYPlayer/issues"
   },
   "devDependencies": {
+    "autoprefixer": "^9.5.0",
     "bili": "^4.7.2",
+    "cssnano": "^4.1.10",
     "eslint": "^5.15.3",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
+    "postcss-base64": "^0.7.1",
     "rollup-plugin-typescript2": "^0.20.1",
     "standard-version": "^5.0.2",
+    "stylus": "^0.54.5",
     "typescript": "^3.4.1"
   },
   "homepage": "https://github.com/huruji/DYPlayer#readme",
