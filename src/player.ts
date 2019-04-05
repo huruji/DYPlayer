@@ -1,5 +1,5 @@
 import Template from './template'
-
+import './css/index.styl'
 interface PlayerOpts {
   container: HTMLElement,
   url: string

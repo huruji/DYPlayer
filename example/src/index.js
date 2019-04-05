@@ -1,6 +1,7 @@
 import 'primer-base'
-
+import '../../dist/index.min.css'
 import DYPlayer from '../../dist/index.min'
+
 
 /*eslint-disable*/
 new DYPlayer({
