@@ -8,7 +8,7 @@ export default class Template{
   container: HTMLElement
   video: HTMLVideoElement
   videoContainer: HTMLElement
-  videoPlayerBtn: HTMLElement
+  videoPlayBtn: HTMLElement
 
   constructor(opts:OptInter) {
     this.opts = opts;
@@ -19,7 +19,7 @@ export default class Template{
     this.renderToContainer()
     this.video = document.querySelector('.dyplayer-video')
     this.videoContainer = document.querySelector('.dyplayer-container')
-    this.videoPlayerBtn = document.querySelector('dyplayer-play-btn')
+    this.videoPlayBtn = document.querySelector('.dyplayer-play-btn')
   }
 
   renderToContainer() {
