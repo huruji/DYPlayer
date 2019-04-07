@@ -2,12 +2,13 @@ import Template from './template'
 import Events from './Events'
 import './css/index.styl'
 import Moedan from 'moedan'
-import { DanmakuData } from 'moedan'
-
+import 'moedan/dist/Moedan.css'
+import { DanmakuData } from 'moedan/dist/src/Moedan'
 interface PlayerOpts {
   container: HTMLElement,
   url: string,
-  danmaku: DanmakuData
+  danmakuData: DanmakuData,
+  needDanmaku: Boolean
 }
 
 export default class Player {
@@ -19,10 +20,13 @@ export default class Player {
   url: string
   template: Template
   events: Events
+  danmakuData: DanmakuData
+  danmaku: Moedan
 
   constructor(opts: PlayerOpts) {
     this.opts = opts
     this.container = opts.container
+    this.danmakuData = opts.danmakuData || []
     this.url = opts.url
     this.init()
   }
@@ -37,5 +41,13 @@ export default class Player {
     this.videoPlayBtn = this.template.videoPlayBtn
     this.video.src = this.url
     this.events = new Events(this)
+
+    if (this.opts.needDanmaku) {
+      this.danmaku = new Moedan({
+        data: this.danmakuData,
+        player: this.video,
+        container: this.videoContainer
+      })
+    }
   }
 }

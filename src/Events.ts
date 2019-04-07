@@ -1,4 +1,4 @@
-import Player from './Player'
+import Player from './dyplayer'
 
 
 export default class Events {
@@ -22,10 +22,13 @@ export default class Events {
 
     this.video.addEventListener('play', (e) => {
       this.player.videoPlayBtn.style.display = 'none'
+      // this.player.danmaku.play()
     }, false)
+
 
     this.video.addEventListener('pause', (e) => {
       e.stopPropagation()
+      // this.video.play()
     }, false)
 
     this.videoContainer.addEventListener('click', () => {
