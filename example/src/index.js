@@ -1,7 +1,7 @@
 import 'primer-base'
 import '../../dist/index.min.css'
 import DYPlayer from '../../dist/index.min'
-import danmaku from './danmaku'
+import danmaku from './danmaku.json'
 
 /*eslint-disable*/
 const danData = danmaku.barrages.map(e => ({
