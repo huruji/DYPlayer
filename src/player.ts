@@ -33,6 +33,5 @@ export default class Player {
     this.videoPlayBtn = this.template.videoPlayBtn
     this.video.src = this.url
     this.events = new Events(this)
-    this.events.init()
   }
 }
