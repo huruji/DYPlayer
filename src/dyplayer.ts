@@ -1,9 +1,13 @@
 import Template from './template'
 import Events from './Events'
 import './css/index.styl'
+import Moedan from 'moedan'
+import { DanmakuData } from 'moedan'
+
 interface PlayerOpts {
   container: HTMLElement,
-  url: string
+  url: string,
+  danmaku: DanmakuData
 }
 
 export default class Player {
