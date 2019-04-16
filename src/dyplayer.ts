@@ -5,10 +5,10 @@ import Moedan from 'moedan'
 import 'moedan/dist/Moedan.css'
 import { DanmakuData } from 'moedan/dist/src/Moedan'
 interface PlayerOpts {
-  container: HTMLElement,
-  url: string,
-  danmakuData: DanmakuData,
-  needDanmaku: Boolean
+  container: HTMLElement
+  url: string
+  danmakuData: DanmakuData
+  needDanmaku: boolean
 }
 
 export default class Player {
@@ -31,7 +31,7 @@ export default class Player {
     this.init()
   }
 
-  init() {
+  init(): void {
     this.template = new Template({
       container: this.container
     })

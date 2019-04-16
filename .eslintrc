@@ -1,22 +1,20 @@
 {
-  "parser": "@typescript-eslint/parser",
   "root": true,
-  "extends": ["airbnb-typescript/base"],
-  "env": {
-    "browser": true,
-    "node": true,
-    "jest": true
-  },
-  "plugins": [],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2018,
-    "ecmaFeatures": {
-      "impliedStrict": true
-    },
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "rules": {
-    "semi": [1, "never"],
-    "no-plusplus": 0
+    "@typescript-eslint/explicit-member-accessibility": ["off"],
+    "@typescript-eslint/explicit-function-return-type": ["off"]
   }
 }

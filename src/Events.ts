@@ -1,11 +1,9 @@
 import Player from './dyplayer'
 
-
 export default class Events {
   player: Player
   video: Player['video']
   videoContainer: Player['videoContainer']
-
   constructor(player: Player) {
     this.player = player
     this.video = this.player.video
@@ -13,23 +11,29 @@ export default class Events {
     this.init()
   }
 
-  init() {
-    this.player.videoPlayBtn.addEventListener('click', (e) => {
+  init(): void {
+    this.player.videoPlayBtn.addEventListener('click', e => {
       console.log('123')
       this.playVideo()
       e.stopPropagation()
     })
 
-    this.video.addEventListener('play', (e) => {
-      this.player.videoPlayBtn.style.display = 'none'
-      // this.player.danmaku.play()
-    }, false)
+    this.video.addEventListener(
+      'play',
+      () => {
+        this.player.videoPlayBtn.style.display = 'none'
+      },
+      false
+    )
 
-
-    this.video.addEventListener('pause', (e) => {
-      e.stopPropagation()
-      // this.video.play()
-    }, false)
+    this.video.addEventListener(
+      'pause',
+      e => {
+        e.stopPropagation()
+        // this.video.play()
+      },
+      false
+    )
 
     this.videoContainer.addEventListener('click', () => {
       if (this.video.paused) {
